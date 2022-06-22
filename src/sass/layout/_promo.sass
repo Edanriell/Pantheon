@@ -1,0 +1,25 @@
+.Promo
+    min-height: 69rem
+    display: grid
+    grid-template-rows: 19rem 29rem
+    grid-template-columns: 14.5rem 7.5rem 62.8rem
+    grid-template-areas: "vertical-text vertical-text2 header" "vertical-text vertical-text2 video"
+    justify-content: left
+    align-content: top
+    margin-top: 12rem
+    grid-gap: 4.1rem 1.5rem
+    &-Header
+        grid-area: header
+        margin-left: 4rem
+    &-VerticalText
+        grid-area: vertical-text
+        justify-self: center
+        justify-self: right
+        opacity: 30%
+    &-VerticalText2
+        grid-area: vertical-text2
+        justify-self: left
+        opacity: 60%
+    &-Video
+        grid-area: video
+        margin-left: 4rem

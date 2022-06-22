@@ -1,0 +1,64 @@
+.SmallForm
+    +flex(row)
+    align-items: center
+    position: relative
+    &-ServicePrice
+        color: var(--white)
+        font-size: var(--very-big-text)
+        font-family: var(--thin-font)
+        margin-right: 4rem
+    &-Field
+        margin-right: 3rem
+    &-Input
+        color: var(--white)
+        font-family: var(--thin-font)
+        font-size: var(--normal-text)
+        width: 22rem
+        height: 3rem
+        border-bottom: 1px solid var(--white)
+        padding-bottom: 0.8rem
+        &:focus
+            padding-bottom: 0.8rem
+        &::placeholder
+            opacity: 100%
+            font-size: var(--normal-text)
+            padding-bottom: 0.8rem
+.LargeForm
+    width: 39rem
+    height: 41.5rem
+    padding: 6.8rem
+    box-sizing: border-box
+    +flex(column)
+    justify-content: space-between
+    background: url("./../images/space-bg.png") no-repeat center
+    background-size: cover
+    &-Text
+        color: var(--white)
+        font-family: var(--bold-font)
+        font-size: 2.3rem
+    &-Field
+        +flex(column)
+    &-NameLabel
+        color: var(--white)
+        font-family: var(--default-font)
+        font-size: var(--small-text)
+        padding-bottom: 0.3rem
+    &-NameInput
+        width: 25rem
+        border-bottom: 1px solid var(--white)
+        color: var(--white)
+        padding-bottom: 0.3rem
+        &:focus
+            padding-bottom: 0.3rem
+    &-EmailLabel
+        color: var(--white)
+        font-family: var(--default-font)
+        font-size: var(--small-text)
+        padding-bottom: 0.3rem
+    &-EmailInput
+        width: 25rem
+        border-bottom: 1px solid var(--white)
+        color: var(--white)
+        padding-bottom: 0.3rem
+        &:focus
+            padding-bottom: 0.3rem

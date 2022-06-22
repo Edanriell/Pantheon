@@ -1,0 +1,115 @@
+.Modal
+    position: absolute
+    width: 800px
+    height: 500px
+    border-radius: 40px
+    background: rgba(255, 255, 255, 1)
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 1fr 1.2fr
+    grid-template-areas: "banner content"
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px
+    column-gap: 60px
+    z-index: 12
+    overflow: hidden
+    &-CloseButton
+        position: absolute
+        top: 3rem
+        right: 4rem
+        width: 3rem
+        height: 3rem
+        background: url("./../images/icons/close-modal.svg") no-repeat transparent
+        background-position: center center
+        background-size: 3rem 3rem
+        cursor: pointer
+.ModalUnderlay
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0, 0.5)
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 10
+    display: none
+.ModalBanner
+    grid-area: banner
+    box-shadow: inset 40px 40px rgba(1,1,1,1)
+    background-color: rgba(1,1,1,1)
+    z-index: 10
+    &-Image
+        width: 100%
+        height: 100%
+        object-fit: cover
+.ModalContent
+    grid-area: content
+    display: flex
+    flex-direction: column
+    padding-right: 40px
+    justify-content: center
+    &-Header
+        text-transform: uppercase
+        font-family: var(--black-font)
+        text-align: left
+        font-size: var(--big-text)
+        line-height: 1
+        color: #030f4b
+        margin-bottom: 2rem
+    &-Text
+        font-family: var(--medium-font)
+        font-size: var(--normal-text)
+        line-height: 1
+        font-size: 2rem
+        color: #030f4b
+        margin-bottom: 4rem
+.ModalForm
+    position: relative
+    &-Field
+        position: relative
+    &-InputLabel
+        position: relative
+    &-Input
+        width: 100%
+        height: 5rem
+        border-radius: 40px
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset
+        background: rgba(255,255,255, 1)
+        padding-left: 3rem
+        font-size: var(--medium-small-text)
+        font-family: var(--medium-font)
+        color: #030f4b
+        &::placeholder
+            color: #030f4b
+            font-size: var(--medium-small-text)
+            font-family: var(--medium-font)
+            opacity: 1
+        &:active
+            padding-left: 3rem
+    &-SubmitButton
+        position: absolute
+        width: 5.4rem
+        height: 5rem
+        border-radius: 0 40px 40px 40px
+        background: #3900ff
+        right: 0
+        top: 0
+        cursor: pointer
+        transition: background .3s linear
+        &:hover
+            background: #2600b1
+    &-SubmitIcon
+        position: absolute
+        right: 0
+        top: 0
+        background: url("./../images/icons/send.svg") no-repeat
+        background-position: center center
+        background-size: 18px 18px
+        transition: background .3s linear
+        width: 5.4rem
+        height: 5rem
+        &:hover
+            background: url("./../images/icons/send.svg") no-repeat
+            background-size: 18px 18px
+            background-position: center center

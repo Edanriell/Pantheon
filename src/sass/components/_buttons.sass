@@ -1,0 +1,113 @@
+.PlayBtn
+    display: block
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    position: absolute
+    color: var(--white)
+    font-family: var(--medium-font)
+    font-size: var(--small-text)
+    +flex(row)
+    align-items: center
+    cursor: pointer
+    z-index: 2
+    &::before
+        content: ""
+        width: 5.2rem
+        height: 5.2rem
+        background-color: var(--dark-red)
+        border-radius: 50%
+        display: inline-block
+        margin-right: 1em
+        cursor: pointer
+        transition: background-color,filter .3s var(--easing-function)
+    &:hover::before
+        filter: brightness(90%)
+    &::after
+        content: ""
+        width: 0
+        height: 0
+        left: 2.1rem
+        border-top: 0.7rem solid transparent
+        border-left: 1.2rem solid var(--white)
+        border-bottom: 0.7rem solid transparent
+        cursor: pointer
+        position: absolute
+        pointer-events: none
+.Button
+    display: inline-block
+    border-radius: 30px
+    cursor: pointer
+    position: relative
+    &_style_snow
+        background-color: var(--white)
+        width: 19.9rem
+        height: 5.8rem
+        color: var(--purple)
+        font-family: var(--bold-font)
+        font-size: var(--small-text)
+        box-shadow: 0px 0px 20px rgba(255,255,255,1)
+        transition: all .3s var(--easing-function)
+        &:hover
+            transform: translateY(-0.5rem)
+            box-shadow: 0px 0px 25px rgba(255,255,255,1)
+    &_style_darkRed
+        background-color: var(--dark-red)
+        width: 16rem
+        height: 4.6rem
+        color: var(--white)
+        font-family: var(--bold-font)
+        font-size: var(--small-text)
+        transition: all .3s var(--easing-function)
+        +flex(column)
+        justify-content: center
+        text-align: center
+        &:hover
+            background-color: #c22350
+    &_style_snowLarge
+        background-color: var(--white)
+        width: 25.5rem
+        height: 5.8rem
+        color: var(--purple)
+        font-family: var(--bold-font)
+        font-size: 1.7rem
+        box-shadow: 0px 0px 20px rgba(255,255,255,1)
+        transition: all .3s var(--easing-function)
+        &:hover
+            transform: translateY(-0.5rem)
+            box-shadow: 0px 0px 25px rgba(255,255,255,1)
+    &-Text
+        display: block
+.SocialButtons
+    +flex(row)
+    align-items: center
+    &-Button
+        margin-right: 1rem
+        &:last-child
+            margin-right: 0
+        &:nth-child(1) > a
+            +icon(3.5rem, 3.5rem, url("./../images/icons/vk.svg"))
+            transition: all .3s var(--easing-function)
+            &:hover
+                opacity: 100%
+                filter: brightness(110%)
+        &:nth-child(2) > a
+            +icon(3.5rem, 3.5rem, url("./../images/icons/twitter.svg"))
+            transition: all .3s var(--easing-function)
+            &:hover
+                opacity: 100%
+                filter: brightness(110%)
+        &:nth-child(3) > a
+            +icon(3.5rem, 3.5rem, url("./../images/icons/facebook.svg"))
+            transition: all .3s var(--easing-function)
+            &:hover
+                opacity: 100%
+                filter: brightness(110%)
+        &:nth-child(4) > a
+            +icon(3.2rem, 2.2rem, url("./../images/icons/youtube.svg"))
+            transition: all .3s var(--easing-function)
+            &:hover
+                opacity: 100%
+                filter: brightness(110%)
+    &-ImageLink
+        cursor: pointer

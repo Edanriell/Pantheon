@@ -1,0 +1,49 @@
+*
+    padding: 0
+    margin: 0
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    margin: 0
+ul,
+ol
+    list-style: none
+button,
+input
+    border: none
+    background-color: transparent
+a
+    color: inherit
+    text-decoration: none
+address
+    font-style: normal
+body
+    font-family: var(--default-font)
+    font-style: normal
+    font-size: var(--normal-text)
+    font-weight: var(--font-normal)
+    color: var(--dark)
+    background: url("./../images/promo-bg.png"), url("./../images/footer-bg.png")
+    background-repeat: no-repeat, no-repeat
+    background-size: 160rem 95rem, 100% 86rem
+    background-position: top center, bottom center
+    background-color: var(--main)
+.Container
+    +container(117rem, 1.5rem, 1.5rem)
+.VisuallyHidden
+    position: absolute
+    width: 1px
+    height: 1px
+    margin: -1px
+    border: 0
+    padding: 0
+    white-space: nowrap
+    clip-path: inset(100%)y
+    clip: rect(0 0 0 0)
+    overflow: hidden

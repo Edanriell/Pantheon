@@ -1,0 +1,28 @@
+.About
+    background-color: var(--white)
+    padding-top: 8.5rem
+    padding-bottom: 7rem
+    &-Content
+        display: grid
+        grid-template-rows: auto 1fr
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-areas: "header header" "articles image"
+    &-Image
+        grid-area: image
+        align-self: center
+        justify-self: end
+        margin-right: 2rem
+    &-Header
+        grid-area: header
+        margin-bottom: 2.4rem
+    &-Subheader
+        margin-bottom: 1.2rem
+.ShortArticleList
+    grid-area: articles
+    &-Item
+        +flex(column)
+        &:nth-child(2)
+            margin-top: 2.5rem
+    &-Text
+        width: 45rem
+        margin-bottom: 1rem

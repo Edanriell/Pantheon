@@ -1,0 +1,29 @@
+.Footer
+    padding-bottom: 5rem
+    &-Content
+        +flex(row)
+        align-items: center
+        justify-content: space-between
+    &-Logotype
+        width: 14.5rem
+        height: 3.5rem
+        opacity: 80%
+    &-AboutProject
+        font-family: var(--light-font)
+        font-size: var(--small-text)
+        color: var(--white)
+        justify-self: center
+        border-bottom: 1px solid var(--white)
+        opacity: 80%
+        transition: opacity .3s var(--easing-function)
+        &:hover
+            opacity: 100%
+    &-Text
+        color: var(--white)
+        font-family: var(--default-font)
+        font-size: var(--small-text)
+        margin-right: 3rem
+.ButtonsGroup
+    opacity: 90%
+    +flex(row)
+    align-items: center
